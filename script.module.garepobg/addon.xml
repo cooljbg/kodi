@@ -1,0 +1,14 @@
+<addon id="script.module.garepobg" name="garepobg" version="0.1.1" provider-name="kodi1">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+</requires>
+<extension point="xbmc.python.module" library="lib"/>
+<extension point="xbmc.addon.metadata">
+<summary/>
+<description/>
+<license/>
+<platform>all</platform>
+<forum>http://forum.kodi.tv/showthread.php?tid=195322</forum>
+<website>https://github.com/kodi1/script.module.garepobg</website>
+</extension>
+</addon>
