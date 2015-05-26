@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.subtitles.unacs" name="subsunacs/subsab" version="0.0.11" provider-name="kodi1">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+<import addon="script.module.beautifulsoup4" version="4.3.2"/>
+<import addon="script.module.requests" version="1.1.0"/>
+<import addon="script.module.garepobg" version="0.1.0"/>
+<import addon="script.module.html5lib" version="0.999.0" optional="false"/>
+</requires>
+<extension point="xbmc.subtitle.module" library="service.py"/>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Bulgarian Subtitle Service</summary>
+<description lang="en">Subtitles from subs.sab.bz and subsunacs.net. Thanks to josdion and jconxtc</description>
+<language>en</language>
+<platform>all</platform>
+<forum>http://forum.kodi.tv/showthread.php?tid=195322</forum>
+<website>https://github.com/kodi1/service.subtitles.unacs</website>
+<email/>
+</extension>
+</addon>
+
+<addon id="plugin.video.bulsat" name="Bulsatcom Service" version="0.0.1" provider-name="coolj">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+    <import addon="script.module.garepobg" version="0.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+        <summary>Bulsatcom for kodi</summary>
+        <summary lang="en">Addon for watching Fusion from bulsat.com</summary>
+        <description lang="en">It is not official addon from provider. It was made just for fun. You were warned.</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum></forum>
+        <forum>http://forum.kodi.tv/showthread.php?tid=195322</forum>
+        <website>https://github.com/kodi1/plugin.video.bulsatcom</website>
+  </extension>
+</addon>
+
+<addon id="script.module.garepobg" name="garepobg" version="0.1.1" provider-name="kodi1">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+</requires>
+<extension point="xbmc.python.module" library="lib"/>
+<extension point="xbmc.addon.metadata">
+<summary/>
+<description/>
+<license/>
+<platform>all</platform>
+<forum>http://forum.kodi.tv/showthread.php?tid=195322</forum>
+<website>https://github.com/kodi1/script.module.garepobg</website>
+</extension>
+</addon>
+</addons>
